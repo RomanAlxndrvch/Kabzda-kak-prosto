@@ -1,7 +1,8 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
-import {log} from "util";
+import Accordion from "./components/Accordion/Accordion";
+import {Rating} from "./components/Rating/Rating";
+
 
 function Hello() {
     console.log('Hello IT-KAMASUTRA!')
@@ -9,76 +10,35 @@ function Hello() {
 
 //Hello()
 
+type PageTitlePropsType = {
+    title: string
+}
+
 function App() {
     console.log('App rendering')
     return (
         <div className="App">
-            <AppTitle/>
-            <Rating/>
-            <Accordion/>
-            <Rating/>
+            <PageTitle title={'This is APP component'}/>
+            <PageTitle title={'My Friends!'}/>
+            Article 1
+            <Rating value={3}/>
+            <Accordion title={'Menu'}/>
+            Article 2
+            <Rating value={0}/>
+            <Rating value={1}/>
+            <Rating value={2}/>
+            <Rating value={3}/>
+            <Rating value={4}/>
+            <Rating value={5}/>
         </div>
     );
 }
 
-function AppTitle() {
+function PageTitle(props: PageTitlePropsType) {
     console.log('Title rendered')
     return (
-        <>This is APP component</>
+        <div><h1>{props.title}</h1></div>
     )
-}
-
-function Rating() {
-    console.log('Rating rendered')
-    return (
-        <>
-            <Star/>
-            <Star/>
-            <Star/>
-            <Star/>
-            <Star/>
-        </>
-    )
-}
-
-function Star() {
-    console.log('Star rendered')
-    return (
-        <>
-            <div>Star</div>
-        </>
-    )
-}
-
-function Accordion() {
-    console.log('Accordion rendered')
-    return (
-        <div>
-            <AccordionTitle/>
-            <AccordionBody/>
-        </div>
-    )
-}
-
-function AccordionTitle() {
-    console.log('AccordionTitle rendered')
-    return (
-        <div><h3>Menu</h3></div>
-    )
-}
-
-function AccordionBody() {
-    console.log('AccordionBody rendered')
-    return (
-        <div>
-            <ul>
-                <li>1</li>
-                <li>2</li>
-                <li>3</li>
-            </ul>
-        </div>
-    )
-
 }
 
 
