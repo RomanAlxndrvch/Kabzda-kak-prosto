@@ -1,6 +1,6 @@
 import React from 'react';
 import './App.css';
-import Accordion from "./components/Accordion/Accordion";
+import Accordion, {Accordion2} from "./components/Accordion/Accordion";
 import {Rating} from "./components/Rating/Rating";
 
 
@@ -18,13 +18,14 @@ function App() {
     console.log('App rendering')
     return (
         <div className="App">
-            <PageTitle title={'This is APP component'}/>
+            {/*   <PageTitle title={'This is APP component'}/>
             <PageTitle title={'My Friends!'}/>
             Article 1
-            <Rating value={3}/>
-            <Accordion title={'Menu'} collapsed={true}/>
-            <Accordion title={'Users'} collapsed={false}/>
-            Article 2
+            <Rating value={3}/>*/}
+            <Accordion2 title={'Menu'} collapsed={true}/>
+            <Accordion2 title={'Users'} collapsed={false}/>
+            <Accordion2 title={'Menu'} collapsed={true}/>
+            {/*   Article 2*/}
             <Rating value={0}/>
             <Rating value={1}/>
             <Rating value={2}/>

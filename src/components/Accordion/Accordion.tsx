@@ -25,6 +25,19 @@ function Accordion(props: AccordionPropsType) {
     }
 }
 
+export function Accordion2(props: AccordionPropsType) {
+    console.log('Accordion rendered')
+    return (
+        <div>
+            <AccordionTitle title={props.title}/>
+            {!props.collapsed && <AccordionBody/>}
+        </div>
+    )
+
+
+}
+
+
 function AccordionTitle(props: AccordionTitlePropsType) {
     console.log('AccordionTitle rendered')
     return (
