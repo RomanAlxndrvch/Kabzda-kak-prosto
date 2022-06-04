@@ -33,10 +33,7 @@ export function Accordion2(props: AccordionPropsType) {
             {!props.collapsed && <AccordionBody/>}
         </div>
     )
-
-
 }
-
 
 function AccordionTitle(props: AccordionTitlePropsType) {
     console.log('AccordionTitle rendered')

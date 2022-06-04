@@ -2,6 +2,7 @@ import React from 'react';
 import './App.css';
 import Accordion, {Accordion2} from "./components/Accordion/Accordion";
 import {Rating} from "./components/Rating/Rating";
+import {Onoff} from "./components/Onoff/Onoff";
 
 
 function Hello() {
@@ -32,6 +33,7 @@ function App() {
             <Rating value={3}/>
             <Rating value={4}/>
             <Rating value={5}/>
+            <Onoff switch={true}/>
         </div>
     );
 }
