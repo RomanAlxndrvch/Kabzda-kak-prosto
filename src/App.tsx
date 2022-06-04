@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useState} from 'react';
 import './App.css';
 import Accordion, {Accordion2} from "./components/Accordion/Accordion";
 import {Rating} from "./components/Rating/Rating";
@@ -17,6 +17,19 @@ type PageTitlePropsType = {
 
 function App() {
     console.log('App rendering')
+
+    let [switcher, setSwitcher] = useState<boolean>(true)
+    console.log(switcher)
+
+
+    const switchChanger = (param: boolean) => {
+        console.log('press', switcher)
+        return (
+            setSwitcher(param)
+        );
+    }
+
+
     return (
         <div className="App">
             {/*   <PageTitle title={'This is APP component'}/>
@@ -33,10 +46,12 @@ function App() {
             <Rating value={3}/>
             <Rating value={4}/>
             <Rating value={5}/>
-            <Onoff switch={true}/>
+            <Onoff switch={switcher} callback={switchChanger}/>
         </div>
     );
+
 }
+
 
 function PageTitle(props: PageTitlePropsType) {
     console.log('Title rendered')
