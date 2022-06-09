@@ -1,12 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="bbdece38-fe4e-40a3-94dd-7f929b596f2e" name="Changes" comment="new render way">
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+    <list default="true" id="bbdece38-fe4e-40a3-94dd-7f929b596f2e" name="Changes" comment="done task from lessen 2">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Onoff/Onoff.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Onoff/Onoff.module.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Onoff/Onoff.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Onoff/Onoff.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -77,6 +73,9 @@
       <workItem from="1654312361944" duration="107000" />
       <workItem from="1654312473002" duration="1272000" />
       <workItem from="1654368199517" duration="1307000" />
+      <workItem from="1654372749018" duration="158000" />
+      <workItem from="1654661754844" duration="288000" />
+      <workItem from="1654738342644" duration="823000" />
     </task>
     <task id="LOCAL-00001" summary="add few components">
       <created>1653345442829</created>
@@ -99,7 +98,14 @@
       <option name="project" value="LOCAL" />
       <updated>1653359935348</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="done task from lessen 2">
+      <created>1654372819873</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1654372819873</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -119,6 +125,7 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="add few components" />
     <MESSAGE value="update components" />
-    <option name="LAST_COMMIT_MESSAGE" value="update components" />
+    <MESSAGE value="done task from lessen 2" />
+    <option name="LAST_COMMIT_MESSAGE" value="done task from lessen 2" />
   </component>
 </project>

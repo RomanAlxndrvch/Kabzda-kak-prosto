@@ -7,7 +7,6 @@ type OnoffPropsType = {
 }
 
 export function Onoff(props: OnoffPropsType) {
-
     return (
         <div className={classes.switcherBlock}>
             <div onClick={() => props.callback(true)} className={`${props.switch && classes.on}`}>ON
