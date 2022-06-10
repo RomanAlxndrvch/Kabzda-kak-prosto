@@ -22,21 +22,6 @@ function UncontrolledAccordion(props: AccordionPropsType) {
             {collapsed && <AccordionBody/>}
         </div>
     )
-    /*if (collapsed) {
-        return (
-            <div>
-                <AccordionTitle title={props.title} setCollapsed={setCollapsed} collapsed={collapsed}/>
-                <AccordionBody/>
-
-            </div>
-        )
-    }
-    else {
-        return (
-            <AccordionTitle title={props.title} setCollapsed={setCollapsed} collapsed={collapsed}/>
-        )
-    }*/
-
 }
 
 
@@ -53,6 +38,7 @@ function AccordionTitle(props: AccordionTitlePropsType) {
 }
 
 function AccordionBody() {
+
     console.log('AccordionBody rendered')
     return (
         <div>
