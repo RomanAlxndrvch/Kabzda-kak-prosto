@@ -28,7 +28,7 @@ function AccordionTitle(props: AccordionTitlePropsType) {
 
 
     return (
-        <div onClick={props.setCollapsed}><h3>{props.title}</h3></div>
+        <h3 onClick={props.setCollapsed}>{props.title}</h3>
     )
 }
 

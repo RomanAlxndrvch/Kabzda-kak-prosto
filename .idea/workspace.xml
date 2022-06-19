@@ -1,9 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="bbdece38-fe4e-40a3-94dd-7f929b596f2e" name="Changes" comment="07.Uncontrolled component">
-      <change afterPath="$PROJECT_DIR$/src/components/UncontrolledAccordion/UncontrolledAccordion.module.css" afterDir="false" />
+    <list default="true" id="bbdece38-fe4e-40a3-94dd-7f929b596f2e" name="Changes" comment="08.30%">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Accordion/Accordion.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Accordion/Accordion.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/Rating/Rating.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Rating/Rating.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/UncontrolledAccordion/UncontrolledAccordion.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/UncontrolledAccordion/UncontrolledAccordion.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/UncontrolledRating/UncontrolledRating.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/UncontrolledRating/UncontrolledRating.tsx" afterDir="false" />
@@ -84,7 +85,9 @@
       <workItem from="1654661754844" duration="288000" />
       <workItem from="1654738342644" duration="9829000" />
       <workItem from="1654824870204" duration="5857000" />
-      <workItem from="1655576118456" duration="4509000" />
+      <workItem from="1655576118456" duration="4574000" />
+      <workItem from="1655658109974" duration="3631000" />
+      <workItem from="1655661840021" duration="2113000" />
     </task>
     <task id="LOCAL-00001" summary="add few components">
       <created>1653345442829</created>
@@ -142,7 +145,14 @@
       <option name="project" value="LOCAL" />
       <updated>1654828765759</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="08.30%">
+      <created>1655610005637</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1655610005637</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -166,6 +176,7 @@
     <MESSAGE value="done task from lessen 2&#10;'OnOff' - my version" />
     <MESSAGE value="06.Kabzda_kak_prosto.OnOff component from Dimych+done homework from lessen 6" />
     <MESSAGE value="07.Uncontrolled component" />
-    <option name="LAST_COMMIT_MESSAGE" value="07.Uncontrolled component" />
+    <MESSAGE value="08.30%" />
+    <option name="LAST_COMMIT_MESSAGE" value="08.30%" />
   </component>
 </project>
