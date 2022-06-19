@@ -1,20 +1,21 @@
 import React, {useState} from "react";
 import classes from './Onoff.module.css'
 
-type OnOffPropsType = {
-    switcher: boolean
-    changeSwitcher: (e: boolean) => void
+type UncontrolledOnoffPropsType = {
+    onChange: (e: boolean) => void
 }
 
+export function UncontrolledOnoff(props: UncontrolledOnoffPropsType) {
+    let [on, setOn] = useState<boolean>(false)
 
-export function Onoff(props: OnOffPropsType) {
+    // Components styles
     const onStyle = {
         width: '30px',
         height: '20px',
         border: '1px solid black',
         display: "inline-block",
         padding: '2px,',
-        backgroundColor: props.switcher ? 'green' : 'transparent'
+        backgroundColor: on ? 'green' : 'transparent'
     }
     const offStyle = {
         width: '30px',
@@ -23,7 +24,7 @@ export function Onoff(props: OnOffPropsType) {
         display: "inline-block",
         padding: '2px,',
         marginLeft: '2px',
-        backgroundColor: props.switcher ? 'transparent' : 'red'
+        backgroundColor: on ? 'transparent' : 'red'
     }
     const indicatorStyle = {
         width: '10px',
@@ -33,21 +34,22 @@ export function Onoff(props: OnOffPropsType) {
         display: "inline-block",
         marginLeft: '5px',
         padding: '2px,',
-        backgroundColor: props.switcher ? 'green' : 'red'
+        backgroundColor: on ? 'green' : 'red'
     }
 
+    //Buttons handlers
     const onBtnHandler = () => {
-        props.changeSwitcher(true)
+        setOn(true)
+        props.onChange(true)
     }
     const offBtnHandler = () => {
-        props.changeSwitcher(false)
+        setOn(false)
+        props.onChange(false)
     }
 
     return (<div>
-            <div style={onStyle} onClick={onBtnHandler}>on
-            </div>
-            <div style={offStyle} onClick={offBtnHandler}>off
-            </div>
+            <div style={onStyle} onClick={onBtnHandler}>on</div>
+            <div style={offStyle} onClick={offBtnHandler}>off</div>
             <div style={indicatorStyle}></div>
         </div>
     )

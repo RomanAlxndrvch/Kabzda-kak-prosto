@@ -1,0 +1,28 @@
+.switcherBlock {
+    display: flex;
+    width: 200px;
+    height: 50px;
+    margin: 20px;
+    gap: 10px;
+}
+
+.switcherBlock > * {
+    border: solid 1px black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex: 1
+}
+
+.circle {
+    border-radius: 50%;
+}
+
+.on {
+    background-color: green;
+}
+
+.off {
+    background-color: red;
+}
+

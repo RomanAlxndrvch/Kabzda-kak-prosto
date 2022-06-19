@@ -5,6 +5,7 @@ import {Rating, RatingValueType} from "./components/Rating/Rating";
 import {Onoff} from "./components/Onoff/Onoff";
 import UncontrolledAccordion from "./components/UncontrolledAccordion/UncontrolledAccordion";
 import {UncontrolledRating} from "./components/UncontrolledRating/UncontrolledRating";
+import {UncontrolledOnoff} from "./components/UncontrolledOnoff/UncontrolledOnoff";
 
 
 function Hello() {
@@ -16,16 +17,29 @@ type PageTitlePropsType = {
 }
 
 function App() {
+
+    // States
     let [ratingValue, setRatingValue] = useState<RatingValueType>(0)
     let [accordionCollapsed, setAccordionCollapsed] = useState<boolean>(false)
+    let [on, setOn] = useState<boolean>(true)
+
+    // Buttons functions
+    const collapsedButtonHandler = () => {
+        setAccordionCollapsed(!accordionCollapsed)
+    }
+
+
     return (
         <div className="App">
-            {/*   <Onoff/>
+            {/*   <UncontrolledOnoff/>
             <UncontrolledAccordion title={'Menu'}/>
             <UncontrolledAccordion title={'User'}/>
-            <UncontrolledRating/>
-            <Rating value={ratingValue} setRating={setRatingValue}/>*/}
-            <Accordion title={'Menu'} collapsed={accordionCollapsed} setAccordionCollapsed={setAccordionCollapsed}/>
+            <UncontrolledRating/>*/}
+            <Rating value={ratingValue} setRating={setRatingValue}/>
+            <UncontrolledOnoff onChange={setOn}/> {on.toString()}
+            <Accordion title={'Menu'} collapsed={accordionCollapsed} setAccordionCollapsed={collapsedButtonHandler}/>
+            <Onoff switcher={on} changeSwitcher={setOn}/>
+
         </div>
     );
 

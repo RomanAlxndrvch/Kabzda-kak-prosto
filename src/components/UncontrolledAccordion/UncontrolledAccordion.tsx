@@ -11,7 +11,6 @@ type AccordionTitlePropsType = {
 }
 
 function UncontrolledAccordion(props: AccordionPropsType) {
-
     const [collapsed, setCollapsed] = useState<boolean>(false)
     const changeCollapsed = () => {
         setCollapsed(!collapsed)
@@ -25,8 +24,6 @@ function UncontrolledAccordion(props: AccordionPropsType) {
 }
 
 function AccordionTitle(props: AccordionTitlePropsType) {
-
-
     return (
         <h3 onClick={props.setCollapsed}>{props.title}</h3>
     )
