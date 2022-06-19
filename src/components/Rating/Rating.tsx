@@ -8,7 +8,7 @@ type StarPropsType = {
 }
 
 export function Rating(props: RatingPropsType) {
-    console.log('UncontrolledRating rendered')
+
     return (
         <div>
             <Star selected={props.value > 0}/>
@@ -23,6 +23,6 @@ export function Rating(props: RatingPropsType) {
 
 
 function Star(props: StarPropsType) {
-    console.log('Star rendered')
+
     return props.selected ? <span> <b>Star </b></span> : <span>Star </span>
 }
