@@ -1,11 +1,11 @@
 import React, {useState} from 'react';
 import './App.css';
-import Accordion from "./components/Accordion/Accordion";
+import {Accordion} from "./components/Accordion/Accordion";
 import {Rating, RatingValueType} from "./components/Rating/Rating";
-import {Onoff} from "./components/Onoff/Onoff";
 import UncontrolledAccordion from "./components/UncontrolledAccordion/UncontrolledAccordion";
 import {UncontrolledRating} from "./components/UncontrolledRating/UncontrolledRating";
 import {UncontrolledOnoff} from "./components/UncontrolledOnoff/UncontrolledOnoff";
+import {OnOff} from "./components/OnOff/OnOff";
 
 
 function Hello() {
@@ -38,7 +38,7 @@ function App() {
             <Rating value={ratingValue} setRating={setRatingValue}/>
             <UncontrolledOnoff onChange={setOn}/> {on.toString()}
             <Accordion title={'Menu'} collapsed={accordionCollapsed} setAccordionCollapsed={collapsedButtonHandler}/>
-            <Onoff switcher={on} changeSwitcher={setOn}/>
+            <OnOff switcher={on} changeSwitcher={setOn}/>
 
         </div>
     );

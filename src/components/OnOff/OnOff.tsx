@@ -1,5 +1,5 @@
 import React, {useState} from "react";
-import classes from './Onoff.module.css'
+import classes from './OnOff.module.css'
 
 type OnOffPropsType = {
     switcher: boolean
@@ -7,7 +7,7 @@ type OnOffPropsType = {
 }
 
 
-export function Onoff(props: OnOffPropsType) {
+export function OnOff(props: OnOffPropsType) {
     const onStyle = {
         width: '30px',
         height: '20px',
