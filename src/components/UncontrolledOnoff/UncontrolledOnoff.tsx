@@ -3,10 +3,11 @@ import classes from './Onoff.module.css'
 
 type UncontrolledOnoffPropsType = {
     onChange: (e: boolean) => void
+    defaultOn?: boolean
 }
 
 export function UncontrolledOnoff(props: UncontrolledOnoffPropsType) {
-    let [on, setOn] = useState<boolean>(false)
+    let [on, setOn] = useState<boolean>(props.defaultOn ? props.defaultOn : false)
 
     // Components styles
     const onStyle = {

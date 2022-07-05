@@ -1,38 +1,32 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="bbdece38-fe4e-40a3-94dd-7f929b596f2e" name="Changes" comment="09.callbacks 2.">
-      <change afterPath="$PROJECT_DIR$/.storybook/main.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.storybook/preview.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/Accordion/Accordion.stories.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/OnOff/OnOff.stories.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/Rating/Rating.stories.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/stories/Button.stories.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/stories/Button.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/stories/Header.stories.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/stories/Header.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/stories/Introduction.stories.mdx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/stories/Page.stories.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/stories/Page.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/stories/assets/code-brackets.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/stories/assets/colors.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/stories/assets/comments.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/stories/assets/direction.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/stories/assets/flow.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/stories/assets/plugin.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/stories/assets/repo.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/stories/assets/stackalt.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/stories/button.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/stories/header.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/stories/page.css" afterDir="false" />
+    <list default="true" id="bbdece38-fe4e-40a3-94dd-7f929b596f2e" name="Changes" comment="10. Implement StoryBook">
+      <change afterPath="$PROJECT_DIR$/src/components/UncontrolledAccordion/UncontrolledAccordion.stories.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/UncontrolledOnoff/UncontrolledOnoff.stories.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/UncontrolledRating/UncontrolledRating.stories.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Accordion/Accordion.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Accordion/Accordion.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Onoff/Onoff.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/OnOff/OnOff.module.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Onoff/Onoff.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/OnOff/OnOff.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Rating/Rating.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Rating/Rating.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/yarn.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/UncontrolledAccordion/UncontrolledAccordion.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/UncontrolledAccordion/UncontrolledAccordion.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/UncontrolledOnoff/UncontrolledOnoff.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/UncontrolledOnoff/UncontrolledOnoff.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/UncontrolledRating/UncontrolledRating.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/UncontrolledRating/UncontrolledRating.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/stories/Button.stories.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/stories/Button.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/stories/Header.stories.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/stories/Header.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/stories/Introduction.stories.mdx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/stories/Page.stories.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/stories/Page.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/stories/assets/code-brackets.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/stories/assets/colors.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/stories/assets/comments.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/stories/assets/direction.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/stories/assets/flow.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/stories/assets/plugin.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/stories/assets/repo.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/stories/assets/stackalt.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/stories/button.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/stories/header.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/stories/page.css" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -59,20 +53,22 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "H:/WebStormProjects/Kabzda-kak-prosto/src/components/Accordion",
+    "last_opened_file_path": "H:/WebStormProjects/Kabzda-kak-prosto/src/components/UncontrolledRating",
     "node.js.detected.package.eslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
-    "settings.editor.selected.configurable": "preferences.sourceCode.TypeScript",
+    "settings.editor.selected.configurable": "actions.on.save",
     "ts.external.directory.path": "H:\\WebStormProjects\\Kabzda-kak-prosto\\node_modules\\typescript\\lib",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="H:\WebStormProjects\Kabzda-kak-prosto\src\components\UncontrolledRating" />
+      <recent name="H:\WebStormProjects\Kabzda-kak-prosto\src\components\UncontrolledOnoff" />
+      <recent name="H:\WebStormProjects\Kabzda-kak-prosto\src\components\UncontrolledAccordion" />
       <recent name="H:\WebStormProjects\Kabzda-kak-prosto\src\components\Accordion" />
       <recent name="H:\WebStormProjects\Kabzda-kak-prosto\src\components\Onoff" />
-      <recent name="H:\WebStormProjects\Kabzda-kak-prosto\src\components" />
     </key>
     <key name="es6.move.members.recent.items">
       <recent name="H:\WebStormProjects\Kabzda-kak-prosto\src\components\Rating\Rating.tsx" />
@@ -128,7 +124,9 @@
       <workItem from="1655661840021" duration="6803000" />
       <workItem from="1656885138820" duration="1853000" />
       <workItem from="1656900785958" duration="3440000" />
-      <workItem from="1656905329204" duration="3545000" />
+      <workItem from="1656905329204" duration="4211000" />
+      <workItem from="1656983551696" duration="214000" />
+      <workItem from="1656986271666" duration="8154000" />
     </task>
     <task id="LOCAL-00001" summary="add few components">
       <created>1653345442829</created>
@@ -207,7 +205,14 @@
       <option name="project" value="LOCAL" />
       <updated>1655676562493</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="10. Implement StoryBook">
+      <created>1656909493884</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1656909493884</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -234,6 +239,7 @@
     <MESSAGE value="08.30%" />
     <MESSAGE value="08.callbacks 1. Done" />
     <MESSAGE value="09.callbacks 2." />
-    <option name="LAST_COMMIT_MESSAGE" value="09.callbacks 2." />
+    <MESSAGE value="10. Implement StoryBook" />
+    <option name="LAST_COMMIT_MESSAGE" value="10. Implement StoryBook" />
   </component>
 </project>
