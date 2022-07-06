@@ -9,7 +9,9 @@ export default {
     component: UncontrolledRating
 }
 
-const callBack = () => action('Rating changed')
+const callBack = () => {
+    action('Rating changed')
+}
 
 export const DefaultMode1 = () => <UncontrolledRating defaultValue={1} onChange={callBack}/>
 export const DefaultMode2 = () => <UncontrolledRating defaultValue={2} onChange={callBack}/>

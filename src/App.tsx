@@ -1,6 +1,6 @@
 import React, {useState} from 'react';
 import './App.css';
-import {Accordion} from "./components/Accordion/Accordion";
+import {Accordion, ItemType} from "./components/Accordion/Accordion";
 import {Rating, RatingValueType} from "./components/Rating/Rating";
 import UncontrolledAccordion from "./components/UncontrolledAccordion/UncontrolledAccordion";
 import {UncontrolledRating} from "./components/UncontrolledRating/UncontrolledRating";
@@ -17,6 +17,24 @@ type PageTitlePropsType = {
 }
 
 function App() {
+    const items: Array<ItemType> = [
+        {
+            title: 'Dimych',
+            value: 1
+        },
+        {
+            title: 'Valera',
+            value: 2
+        },
+        {
+            title: 'Artem',
+            value: 3
+        },
+        {
+            title: 'Viktor',
+            value: 4
+        }
+    ]
 
     // States
     let [ratingValue, setRatingValue] = useState<RatingValueType>(0)
