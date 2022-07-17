@@ -1,10 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="bbdece38-fe4e-40a3-94dd-7f929b596f2e" name="Changes" comment="11.2 - More about Storybook">
-      <change afterPath="$PROJECT_DIR$/src/stories/input.stories.tsx" afterDir="false" />
+    <list default="true" id="bbdece38-fe4e-40a3-94dd-7f929b596f2e" name="Changes" comment="12 - uncontrolled input">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/OnOff/OnOff.stories.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/OnOff/OnOff.stories.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/stories/input.stories.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/stories/input.stories.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -107,7 +106,7 @@
       <workItem from="1656986271666" duration="8414000" />
       <workItem from="1657069461175" duration="14020000" />
       <workItem from="1657157526049" duration="219000" />
-      <workItem from="1658079509065" duration="4931000" />
+      <workItem from="1658079509065" duration="9794000" />
     </task>
     <task id="LOCAL-00001" summary="add few components">
       <created>1653345442829</created>
@@ -207,7 +206,14 @@
       <option name="project" value="LOCAL" />
       <updated>1657083640327</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary="12 - uncontrolled input">
+      <created>1658085732190</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1658085732190</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -237,6 +243,7 @@
     <MESSAGE value="10. Implement StoryBook" />
     <MESSAGE value="11. Storybook, defaultValue" />
     <MESSAGE value="11.2 - More about Storybook" />
-    <option name="LAST_COMMIT_MESSAGE" value="11.2 - More about Storybook" />
+    <MESSAGE value="12 - uncontrolled input" />
+    <option name="LAST_COMMIT_MESSAGE" value="12 - uncontrolled input" />
   </component>
 </project>
