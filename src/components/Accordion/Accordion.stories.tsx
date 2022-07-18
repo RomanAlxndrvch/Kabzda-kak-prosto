@@ -69,7 +69,12 @@ usersUnCollapsedMode.args = {
 
 export const ModeChanging: ComponentStory<typeof Accordion> = (args) => {
     const [value, setValue] = useState<boolean>(false)
-    return <Accordion {...args} collapsed={value} setAccordionCollapsed={() => setValue(!value)}/>
+    return <Accordion {...args}
+                      collapsed={value}
+                      setAccordionCollapsed={() => setValue(!value)}
+                      onClick={(id) => {
+                          console.log(id)
+                      }}/>
 }
 ModeChanging.args = {
     title: 'Users (ModeChanging)',
@@ -89,6 +94,10 @@ ModeChanging.args = {
         {
             title: 'Viktor',
             value: 4
+        },
+        {
+            title: 'Oleg',
+            value: 5
         }
     ],
     setAccordionCollapsed: callback,

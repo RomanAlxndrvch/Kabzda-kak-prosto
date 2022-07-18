@@ -1,9 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="bbdece38-fe4e-40a3-94dd-7f929b596f2e" name="Changes" comment="12 - uncontrolled input">
+    <list default="true" id="bbdece38-fe4e-40a3-94dd-7f929b596f2e" name="Changes" comment="13 - controlled input, checkbox, select">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/stories/input.stories.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/stories/input.stories.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Accordion/Accordion.stories.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Accordion/Accordion.stories.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Accordion/Accordion.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Accordion/Accordion.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -106,7 +108,7 @@
       <workItem from="1656986271666" duration="8414000" />
       <workItem from="1657069461175" duration="14020000" />
       <workItem from="1657157526049" duration="219000" />
-      <workItem from="1658079509065" duration="9794000" />
+      <workItem from="1658079509065" duration="16407000" />
     </task>
     <task id="LOCAL-00001" summary="add few components">
       <created>1653345442829</created>
@@ -213,7 +215,14 @@
       <option name="project" value="LOCAL" />
       <updated>1658085732190</updated>
     </task>
-    <option name="localTasksCounter" value="16" />
+    <task id="LOCAL-00016" summary="13 - controlled input, checkbox, select">
+      <created>1658102212386</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1658102212386</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -244,6 +253,7 @@
     <MESSAGE value="11. Storybook, defaultValue" />
     <MESSAGE value="11.2 - More about Storybook" />
     <MESSAGE value="12 - uncontrolled input" />
-    <option name="LAST_COMMIT_MESSAGE" value="12 - uncontrolled input" />
+    <MESSAGE value="13 - controlled input, checkbox, select" />
+    <option name="LAST_COMMIT_MESSAGE" value="13 - controlled input, checkbox, select" />
   </component>
 </project>

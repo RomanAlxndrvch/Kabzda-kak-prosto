@@ -3,20 +3,11 @@ import React from "react";
 export type AccordionPropsType = {
     title: string
     collapsed: boolean
-    /**
-     *Callback  that is called when any item clicked
-     * @param value of clicked item
-     */
     setAccordionCollapsed: () => void
     onChange?: () => void
-    /**
-     *Elements that are showed when accordion is opened(not collapsed)
-     */
-    items?: Array<ItemType>
-    /**
-     *Optional color of header text
-     */
+    items: Array<ItemType>
     color?: string
+    onClick: (e: any) => void
 }
 type AccordionTitlePropsType = {
     title: string
@@ -24,7 +15,8 @@ type AccordionTitlePropsType = {
     color?: string
 }
 type AccordionBodyType = {
-    items?: Array<ItemType>
+    items: Array<ItemType>
+    onClick: (e: any) => void
 }
 export type ItemType = {
     title: string
@@ -38,7 +30,7 @@ export function Accordion(props: AccordionPropsType) {
                             setAccordionCollapsed={props.setAccordionCollapsed}
                             color={props.color}
             />
-            {!props.collapsed && <AccordionBody items={props.items}/>}
+            {!props.collapsed && <AccordionBody onClick={props.onClick} items={props.items}/>}
         </div>
     )
 }
@@ -54,22 +46,26 @@ function AccordionTitle(props: AccordionTitlePropsType) {
 
 function AccordionBody(props: AccordionBodyType) {
     console.log('AccordionBody rendered')
+
     const typeRender = (e: Array<ItemType>) => {
         return e.map((e) => {
+            const onClickHandler = () => {
+                props.onClick(e.value)
+                console.log(`${e.title} clicked`)
+            }
             return (
-                <ul>
-                    <li>{e.title}</li>
-                </ul>
+                <li onClick={onClickHandler} key={e.value}>{e.title}</li>
             )
         })
     }
     return (
         <div>
-            {props.items ? typeRender(props.items) : <ul>
-                <li>1</li>
+            <ul>
+                {props.items ? typeRender(props.items) : props.items}
+                {/*   <li>1</li>
                 <li>2</li>
-                <li>3</li>
-            </ul>}
+                <li>3</li>*/}
+            </ul>
         </div>
     )
 }

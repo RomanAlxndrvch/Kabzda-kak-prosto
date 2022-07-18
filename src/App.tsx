@@ -33,6 +33,10 @@ function App() {
         {
             title: 'Viktor',
             value: 4
+        },
+        {
+            title: 'Oleg',
+            value: 5
         }
     ]
 
@@ -46,6 +50,10 @@ function App() {
         setAccordionCollapsed(!accordionCollapsed)
     }
 
+    const onClickAccHandler = (e: number) => {
+        console.log(e)
+    }
+
 
     return (
         <div className="App">
@@ -55,7 +63,8 @@ function App() {
             <UncontrolledRating/>*/}
             <Rating value={ratingValue} setRating={setRatingValue}/>
             <UncontrolledOnoff onChange={setOn}/> {on.toString()}
-            <Accordion title={'Menu'} collapsed={accordionCollapsed} setAccordionCollapsed={collapsedButtonHandler}/>
+            <Accordion title={'Menu'} collapsed={accordionCollapsed} setAccordionCollapsed={collapsedButtonHandler}
+                       items={items} onClick={onClickAccHandler}/>
             <OnOff switcher={on} changeSwitcher={setOn}/>
 
         </div>
