@@ -73,7 +73,7 @@ export const ModeChanging: ComponentStory<typeof Accordion> = (args) => {
                       collapsed={value}
                       setAccordionCollapsed={() => setValue(!value)}
                       onClick={(id) => {
-                          console.log(id)
+                          console.log(args)
                       }}/>
 }
 ModeChanging.args = {
