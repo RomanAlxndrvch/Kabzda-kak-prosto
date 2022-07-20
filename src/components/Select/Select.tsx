@@ -1,4 +1,4 @@
-import React, {useState} from "react";
+import React, {useEffect, useState} from "react";
 import classes from './Select.module.css'
 
 export type ItemType = {
@@ -6,34 +6,41 @@ export type ItemType = {
     value: string
 }
 type SelectPropsType = {
-    value: string
-    onClick: (e: string) => void
     items: ItemType[]
+    onClick: (e: string) => void
 }
 
-
 export function Select(props: SelectPropsType) {
-    const [showSelect, setShowSelect] = useState<boolean>(true)
+    const [showSelect, setShowSelect] = useState<boolean>(false)
+    const [value, setValue] = useState<string>('Select...')
+
+    useEffect(() => {
+        props.onClick(value)
+    }, [props, value])
+
+    const changeValue = (elValue: string) => {
+        const temp = props.items.find((e) => e.value === elValue)
+        temp && setValue(temp.title)
+    }
 
     const collapsedHandler = () => {
         setShowSelect(!showSelect)
-
     }
 
+    const arr = props.items.filter(e => e.title !== value)
+    
     return (
-        <div className={classes.selector}>
-            <div onClick={collapsedHandler}>{props.value}</div>
-            {showSelect && props.items.map((el) => {
+        <div className={classes.main}>
+            <div className={classes.title} onClick={collapsedHandler}>{value}</div>
+            {showSelect && arr.map((el) => {
                 const onClickHandler = () => {
-                    props.onClick(el.value)
+                    changeValue(el.value)
                     setShowSelect(!showSelect)
                 }
-                return <div
-                    onClick={onClickHandler}
+                return <div className={classes.selectors}
+                            onClick={onClickHandler}
                 >{el.title} </div>
             })}
         </div>
     )
 }
-
-

@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="bbdece38-fe4e-40a3-94dd-7f929b596f2e" name="Changes" comment="Select without css">
+    <list default="true" id="bbdece38-fe4e-40a3-94dd-7f929b596f2e" name="Changes" comment="Select without css,version 2">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Select/Select.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Select/Select.module.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/Select/Select.stories.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Select/Select.stories.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/Select/Select.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Select/Select.tsx" afterDir="false" />
     </list>
@@ -116,7 +117,7 @@
       <workItem from="1657157526049" duration="219000" />
       <workItem from="1658079509065" duration="16516000" />
       <workItem from="1658193505213" duration="12501000" />
-      <workItem from="1658278993270" duration="2646000" />
+      <workItem from="1658278993270" duration="5909000" />
     </task>
     <task id="LOCAL-00001" summary="add few components">
       <created>1653345442829</created>
@@ -244,7 +245,14 @@
       <option name="project" value="LOCAL" />
       <updated>1658206370179</updated>
     </task>
-    <option name="localTasksCounter" value="19" />
+    <task id="LOCAL-00019" summary="Select without css,version 2">
+      <created>1658281993558</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1658281993558</updated>
+    </task>
+    <option name="localTasksCounter" value="20" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -278,6 +286,7 @@
     <MESSAGE value="13 - controlled input, checkbox, select" />
     <MESSAGE value="14 - controlled input, checkbox, select" />
     <MESSAGE value="Select without css" />
-    <option name="LAST_COMMIT_MESSAGE" value="Select without css" />
+    <MESSAGE value="Select without css,version 2" />
+    <option name="LAST_COMMIT_MESSAGE" value="Select without css,version 2" />
   </component>
 </project>

@@ -1,4 +1,4 @@
-import React, {useState} from 'react';
+import React from 'react';
 import {ComponentStory} from '@storybook/react';
 import {Select} from "./Select";
 
@@ -9,15 +9,13 @@ export default {
 }
 
 export const FullSelect: ComponentStory<typeof Select> = (args) => {
-    const [value, setValue] = useState<string>('Select...')
 
-    const changeValue = (elValue: string) => {
-        const temp = args.items.find((e) => e.value === elValue)
-        temp && setValue(temp.title)
+    const selectedItem = (e: string) => {
+        console.log(`${e} is selected`)
     }
 
     return (
-        <Select value={value} items={args.items} onClick={changeValue}/>
+        <Select items={args.items} onClick={selectedItem}/>
     )
 }
 

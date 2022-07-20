@@ -1,3 +1,31 @@
-.selector {
-    border: 1px solid black;
+.main {
+    font-family: Candara;
+    width: 80px;
+    border: 2px solid darkgrey;
+    border-radius: 5px;
+    padding: 5px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    cursor: default;
+}
+
+.title {
+    display: flex;
+    justify-content: center;
+    width: 90%;
+    padding: 5px;
+    background-color: lightgrey;
+}
+
+.selectors {
+    padding: 5px;
+    margin: 3px;
+    border-radius: 5px;
+}
+
+.selectors:hover {
+    background-color: bisque;
 }
