@@ -14,8 +14,10 @@ type SelectPropsType = {
 
 export function Select(props: SelectPropsType) {
     const [showSelect, setShowSelect] = useState<boolean>(true)
+
     const collapsedHandler = () => {
         setShowSelect(!showSelect)
+
     }
 
     return (
@@ -23,13 +25,11 @@ export function Select(props: SelectPropsType) {
             <div onClick={collapsedHandler}>{props.value}</div>
             {showSelect && props.items.map((el) => {
                 const onClickHandler = () => {
-                    props.onClick(el.title)
+                    props.onClick(el.value)
                     setShowSelect(!showSelect)
                 }
                 return <div
                     onClick={onClickHandler}
-                    onBlur={collapsedHandler}
-
                 >{el.title} </div>
             })}
         </div>

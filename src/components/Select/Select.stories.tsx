@@ -9,16 +9,15 @@ export default {
 }
 
 export const FullSelect: ComponentStory<typeof Select> = (args) => {
-    const [value, setValue] = useState<string>('')
-    let newValue: string = 'Select...'
+    const [value, setValue] = useState<string>('Select...')
 
     const changeValue = (elValue: string) => {
-        const temp = args.items.find(e => e.value === elValue)
-        return temp ? newValue = temp.title : ''
+        const temp = args.items.find((e) => e.value === elValue)
+        temp && setValue(temp.title)
     }
 
     return (
-        <Select value={value} items={args.items} onClick={setValue}/>
+        <Select value={value} items={args.items} onClick={changeValue}/>
     )
 }
 
