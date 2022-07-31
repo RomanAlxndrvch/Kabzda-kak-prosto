@@ -30,8 +30,6 @@ export function Select(props: SelectPropsType) {
         setShowSelect(!showSelect)
     }
 
-    const arr = props.items.filter(e => e.title !== value.title)
-
     let num = parseInt(value.value)
     const onKeyDown = (e: KeyboardEvent<HTMLDivElement>) => {
         if (e.key === 'ArrowUp') {

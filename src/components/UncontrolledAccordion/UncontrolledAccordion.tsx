@@ -1,4 +1,5 @@
-import React, {useState, MouseEvent} from "react";
+import React, {MouseEvent, useReducer} from "react";
+import {reducer, ToggleCollapsedAC} from "./Reducer";
 
 type AccordionPropsType = {
     title: string
@@ -11,14 +12,17 @@ type AccordionTitlePropsType = {
 }
 
 export function UncontrolledAccordion(props: AccordionPropsType) {
-    const [collapsed, setCollapsed] = useState<boolean>(false)
+
+    //const [state, setCollapsed] = useState<boolean>(false)
+    const [state, dispatchState] = useReducer(reducer, {collapsed: true})
+
     const changeCollapsed = () => {
-        setCollapsed(!collapsed)
+        dispatchState(ToggleCollapsedAC())
     }
     return (
         <div>
-            <AccordionTitle title={props.title} setCollapsed={changeCollapsed} collapsed={collapsed}/>
-            {collapsed && <AccordionBody/>}
+            <AccordionTitle title={props.title} setCollapsed={changeCollapsed} collapsed={state.collapsed}/>
+            {!state.collapsed && <AccordionBody/>}
         </div>
     )
 }

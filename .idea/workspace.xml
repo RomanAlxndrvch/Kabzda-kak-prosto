@@ -1,11 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="bbdece38-fe4e-40a3-94dd-7f929b596f2e" name="Changes" comment="Select done">
+    <list default="true" id="bbdece38-fe4e-40a3-94dd-7f929b596f2e" name="Changes" comment="15.">
+      <change afterPath="$PROJECT_DIR$/src/components/UncontrolledAccordion/Reducer.test.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/UncontrolledAccordion/Reducer.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Select/Select.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Select/Select.module.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Select/Select.stories.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Select/Select.stories.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/Select/Select.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Select/Select.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/UncontrolledAccordion/UncontrolledAccordion.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/UncontrolledAccordion/UncontrolledAccordion.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -39,9 +40,10 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "H:/WebStormProjects/Kabzda-kak-prosto",
+    "last_opened_file_path": "H:/VSCodeProjects/CRA",
     "node.js.detected.package.eslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
+    "nodejs.jest.jest_package": "H:/WebStormProjects/Kabzda-kak-prosto/node_modules/react-scripts",
     "nodejs_package_manager_path": "npm",
     "settings.editor.selected.configurable": "inlay.hints",
     "ts.external.directory.path": "H:\\WebStormProjects\\Kabzda-kak-prosto\\node_modules\\typescript\\lib",
@@ -57,10 +59,50 @@
       <recent name="H:\WebStormProjects\Kabzda-kak-prosto\src\components\Accordion" />
     </key>
     <key name="es6.move.members.recent.items">
+      <recent name="H:\WebStormProjects\Kabzda-kak-prosto\src\components\UncontrolledAccordion\Reducer.tsx" />
       <recent name="H:\WebStormProjects\Kabzda-kak-prosto\src\components\Rating\Rating.tsx" />
     </key>
   </component>
-  <component name="RunManager" selected="npm.storybook">
+  <component name="RunManager" selected="Jest.Should be error">
+    <configuration name="Should be error" type="JavaScriptTestRunnerJest" temporary="true" nameIsGenerated="true">
+      <node-interpreter value="project" />
+      <node-options value="" />
+      <jest-package value="$PROJECT_DIR$/node_modules/react-scripts" />
+      <working-dir value="$PROJECT_DIR$" />
+      <envs />
+      <scope-kind value="TEST" />
+      <test-file value="$PROJECT_DIR$/src/components/UncontrolledAccordion/Reducer.test.ts" />
+      <test-names>
+        <test-name value="Should be error" />
+      </test-names>
+      <method v="2" />
+    </configuration>
+    <configuration name="collapsed should be true" type="JavaScriptTestRunnerJest" temporary="true" nameIsGenerated="true">
+      <node-interpreter value="project" />
+      <node-options value="" />
+      <jest-package value="$PROJECT_DIR$/node_modules/react-scripts" />
+      <working-dir value="$PROJECT_DIR$" />
+      <envs />
+      <scope-kind value="TEST" />
+      <test-file value="$PROJECT_DIR$/src/components/UncontrolledAccordion/Reducer.test.ts" />
+      <test-names>
+        <test-name value="collapsed should be true" />
+      </test-names>
+      <method v="2" />
+    </configuration>
+    <configuration name="reducer should change value to opposite value" type="JavaScriptTestRunnerJest" temporary="true" nameIsGenerated="true">
+      <node-interpreter value="project" />
+      <node-options value="" />
+      <jest-package value="$PROJECT_DIR$/node_modules/react-scripts" />
+      <working-dir value="$PROJECT_DIR$" />
+      <envs />
+      <scope-kind value="TEST" />
+      <test-file value="$PROJECT_DIR$/src/components/UncontrolledAccordion/Reducer.test.ts" />
+      <test-names>
+        <test-name value="reducer should change value to opposite value" />
+      </test-names>
+      <method v="2" />
+    </configuration>
     <configuration name="start" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
       <package-json value="$PROJECT_DIR$/package.json" />
       <command value="run" />
@@ -83,6 +125,9 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Jest.Should be error" />
+        <item itemvalue="Jest.collapsed should be true" />
+        <item itemvalue="Jest.reducer should change value to opposite value" />
         <item itemvalue="npm.storybook" />
         <item itemvalue="npm.start" />
       </list>
