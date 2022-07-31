@@ -15,7 +15,7 @@ export const FullSelect: ComponentStory<typeof Select> = (args) => {
     }
 
     return (
-        <Select items={args.items} onClick={selectedItem}/>
+        <Select items={args.items} onClick={selectedItem} value={1}/>
     )
 }
 
