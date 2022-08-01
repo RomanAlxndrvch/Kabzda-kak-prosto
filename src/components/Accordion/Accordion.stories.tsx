@@ -1,6 +1,6 @@
 import React, {useState} from 'react';
 import {ComponentStory, ComponentMeta} from '@storybook/react';
-import {Accordion, AccordionPropsType} from "./Accordion";
+import {Accordion, AccordionPropsType, MemoAccordion} from "./Accordion";
 import {action} from "@storybook/addon-actions";
 
 const getCaterotyObj = (categoryName: 'color' | 'main' | 'events') => ({
@@ -69,12 +69,12 @@ usersUnCollapsedMode.args = {
 
 export const ModeChanging: ComponentStory<typeof Accordion> = (args) => {
     const [value, setValue] = useState<boolean>(false)
-    return <Accordion {...args}
-                      collapsed={value}
-                      setAccordionCollapsed={() => setValue(!value)}
-                      onClick={(id) => {
-                          console.log(args)
-                      }}/>
+    return <MemoAccordion {...args}
+                          collapsed={value}
+                          setAccordionCollapsed={() => setValue(!value)}
+                          onClick={(id) => {
+                              console.log(args)
+                          }}/>
 }
 ModeChanging.args = {
     title: 'Users (ModeChanging)',
