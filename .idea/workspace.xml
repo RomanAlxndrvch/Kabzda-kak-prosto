@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="bbdece38-fe4e-40a3-94dd-7f929b596f2e" name="Changes" comment="19 - useCallback">
-      <change afterPath="$PROJECT_DIR$/src/stories/useState.stories.tsx" afterDir="false" />
+    <list default="true" id="bbdece38-fe4e-40a3-94dd-7f929b596f2e" name="Changes" comment="20 - Deep into useState">
+      <change afterPath="$PROJECT_DIR$/src/stories/useEffect.stories.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -166,7 +166,8 @@
       <workItem from="1660184487132" duration="6066000" />
       <workItem from="1660355951367" duration="791000" />
       <workItem from="1661221639915" duration="3884000" />
-      <workItem from="1662523015509" duration="1538000" />
+      <workItem from="1662523015509" duration="1783000" />
+      <workItem from="1662599035273" duration="2824000" />
     </task>
     <task id="LOCAL-00001" summary="add few components">
       <created>1653345442829</created>
@@ -329,7 +330,14 @@
       <option name="project" value="LOCAL" />
       <updated>1661225737231</updated>
     </task>
-    <option name="localTasksCounter" value="24" />
+    <task id="LOCAL-00024" summary="20 - Deep into useState">
+      <created>1662524796317</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1662524796317</updated>
+    </task>
+    <option name="localTasksCounter" value="25" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -368,6 +376,7 @@
     <MESSAGE value="16. useReducer" />
     <MESSAGE value="17 - React.memo" />
     <MESSAGE value="19 - useCallback" />
-    <option name="LAST_COMMIT_MESSAGE" value="19 - useCallback" />
+    <MESSAGE value="20 - Deep into useState" />
+    <option name="LAST_COMMIT_MESSAGE" value="20 - Deep into useState" />
   </component>
 </project>
