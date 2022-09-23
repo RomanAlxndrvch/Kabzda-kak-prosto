@@ -1,10 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="bbdece38-fe4e-40a3-94dd-7f929b596f2e" name="Changes" comment="21 - useEffect basics">
+    <list default="true" id="bbdece38-fe4e-40a3-94dd-7f929b596f2e" name="Changes" comment="22 - useEffect \ setTimeout \ setInterval + clock">
+      <change afterPath="$PROJECT_DIR$/src/components/Clock/Clock.stories.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/Clock/Clock.tsx" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/src/stories/clock.stories.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/stories/useEffect.stories.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/stories/useEffect.stories.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -168,7 +169,8 @@
       <workItem from="1660355951367" duration="791000" />
       <workItem from="1661221639915" duration="3884000" />
       <workItem from="1662523015509" duration="1783000" />
-      <workItem from="1662599035273" duration="7114000" />
+      <workItem from="1662599035273" duration="7461000" />
+      <workItem from="1663900552871" duration="3522000" />
     </task>
     <task id="LOCAL-00001" summary="add few components">
       <created>1653345442829</created>
@@ -345,7 +347,14 @@
       <option name="project" value="LOCAL" />
       <updated>1662603263495</updated>
     </task>
-    <option name="localTasksCounter" value="26" />
+    <task id="LOCAL-00026" summary="22 - useEffect \ setTimeout \ setInterval + clock">
+      <created>1662607667319</created>
+      <option name="number" value="00026" />
+      <option name="presentableId" value="LOCAL-00026" />
+      <option name="project" value="LOCAL" />
+      <updated>1662607667319</updated>
+    </task>
+    <option name="localTasksCounter" value="27" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -386,6 +395,7 @@
     <MESSAGE value="19 - useCallback" />
     <MESSAGE value="20 - Deep into useState" />
     <MESSAGE value="21 - useEffect basics" />
-    <option name="LAST_COMMIT_MESSAGE" value="21 - useEffect basics" />
+    <MESSAGE value="22 - useEffect \ setTimeout \ setInterval + clock" />
+    <option name="LAST_COMMIT_MESSAGE" value="22 - useEffect \ setTimeout \ setInterval + clock" />
   </component>
 </project>
